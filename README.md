@@ -1,16 +1,9 @@
-# flutter_app
+# Bloco de Notas  (Notes)
 
 Bloco de Notas
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+My first flutter app. A simple note taking app using flutter, derived on https://github.com/mohak1283/, but fully functional. Feel free to explore, use and warn me about bad coding or hidden bugs.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Meu primeiro app com flutter. Um bloco de notas simples, mas totalmente funcional, derivado do https://github.com/mohak1283/NoteKeeper/. Sinta-se à vontade para explorar, usar e me avisar sobre práticas ruins e problemas latentes.
