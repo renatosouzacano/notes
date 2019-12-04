@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/firebase_analytics.dart';
 import 'package:flutter_app/notas.dart';
 import 'package:flutter_app/database_helper.dart';
 import 'package:flutter_app/detail.dart';
+import 'observer.dart';
 
 // based on https://github.com/mohak1283/NoteKeeper/
+
+FirebaseAnalytics analytics1 = FirebaseAnalytics();
 
 void main() {
   runApp(MaterialApp(
     title: "Bloco de Notas",
     home: NotesList(),
+   navigatorObservers: [
+     FirebaseAnalyticsObserver(analytics: analytics1),
+   ],
+
   ));
 }
 
