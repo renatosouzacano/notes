@@ -126,6 +126,7 @@ class _NoteDetailState extends State<NoteDetail> {
   }
 
   void moveToLastScreen() {
+    debugPrint("pop");
     Navigator.pop(context, true); // passing the true value to noteList screen.
   }
 

@@ -13,10 +13,9 @@ void main() {
   runApp(MaterialApp(
     title: "Bloco de Notas",
     home: NotesList(),
-   navigatorObservers: [
-     FirebaseAnalyticsObserver(analytics: analytics1),
-   ],
-
+    navigatorObservers: [
+      FirebaseAnalyticsObserver(analytics: analytics1),
+    ],
   ));
 }
 
@@ -29,7 +28,8 @@ class _NotesListState extends State<NotesList> {
   DatabaseHelper _databaseHelper = DatabaseHelper();
   List<Note> _notas;
   int count = 0;
-
+ 
+  
   @override
   Widget build(BuildContext context) {
     if (_notas == null) {
@@ -102,7 +102,6 @@ class _NotesListState extends State<NotesList> {
     }
   }
 
-
   void updateListView() async {
     var database = await _databaseHelper.db; //_databaseHelper.initDB();
     List<Note> listaDeNotas = await _databaseHelper.getNotesList();
@@ -112,4 +111,3 @@ class _NotesListState extends State<NotesList> {
     });
   }
 }
-
