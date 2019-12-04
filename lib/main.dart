@@ -30,6 +30,7 @@ class _NotesListState extends State<NotesList> {
       updateListView();
     }
     return new Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: Text("Bloco de Notas"),
       ),
