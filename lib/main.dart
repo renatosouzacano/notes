@@ -33,8 +33,7 @@ class _NotesListState extends State<NotesList> {
   @override
   Widget build(BuildContext context) {
     if (_notas == null) {
-      List<Note> _notas;
-
+      // List<Note> _notas;
       updateListView();
     }
     return new Scaffold(
@@ -103,7 +102,7 @@ class _NotesListState extends State<NotesList> {
   }
 
   void updateListView() async {
-    var database = await _databaseHelper.db; //_databaseHelper.initDB();
+    // var database = await _databaseHelper.db; //_databaseHelper.initDB();
     List<Note> listaDeNotas = await _databaseHelper.getNotesList();
     setState(() {
       this._notas = listaDeNotas;
